@@ -1,7 +1,7 @@
 import React from 'react'
 import Square from './Square'
 
-export default function Board({ changeColor }) {
+export default function Board({ squares, changeColor }) {
     return ( 
         <div class="board">
             <div class="row">
@@ -12,7 +12,7 @@ export default function Board({ changeColor }) {
             
             <div class="row">
                 <Square id="4" onclick={changeColor} />
-                <Square id="5" onclick={changeColor} />
+                <Square id="5" onclick={changeColor} colour="red" />
                 <Square id="6" onclick={changeColor} />
             </div>
 
