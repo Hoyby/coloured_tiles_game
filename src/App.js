@@ -2,14 +2,15 @@ import Board from './Board'
 import './App.css';
 
 function App() {
+  
 
-  function changeColor(){
-      return null
+  function changeColor(id){
+      console.log(id)
   }
 
   return (
     <>
-      <Board changeColor={changeColor}/>
+      <Board changeColor={changeColor} colour="red" />
     </>
   )
 }
